@@ -1,5 +1,5 @@
 <div>
-    <h1>Component Project Index</h1>
+    <h2>Component Project Index</h2>
 
     <ul>
         @foreach ($this->projects as $project)

@@ -1,5 +1,9 @@
 <div>
-    <h1>Component Project Show</h1>
+    <h2>Component Project Show</h2>
 
-    @dump($project)
+    <pre>
+        title: {{ $project->title }}
+
+        description: {!! $project->description !!}
+    </pre>
 </div>
