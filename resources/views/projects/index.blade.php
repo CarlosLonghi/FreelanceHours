@@ -1,3 +1,5 @@
 <x-layouts.app>
-    <h1>Projects Index</h1>
+    <h1>Page Project Index</h1>
+
+    <livewire:projects.index />
 </x-layouts.app>
