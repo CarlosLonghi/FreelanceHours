@@ -1,3 +1,5 @@
 <x-layouts.app>
-    <h1>Project Show</h1>
+    <h1>Page Project Show</h1>
+    
+    <livewire:projects.show :project="$project"/>
 </x-layouts.app>
