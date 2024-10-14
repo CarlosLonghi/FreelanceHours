@@ -1,5 +1,5 @@
 @props(['project'])
-<x-ui.card class="col-span-2 ">
+<x-ui.card class="col-span-2">
     <div class="flex items-start justify-between pb-4">
         <div class="flex flex-col gap-[16px]">
             <div>
@@ -14,11 +14,10 @@
                 Publicado {{ $project->created_at->diffForHumans() }}
             </div>
         </div>
-        <div>
+        {{-- <div>
             <livewire:proposals.create :$project />
             <livewire:projects.timer :$project />
-
-        </div>
+        </div> --}}
     </div>
 
     <div class="py-4 description">
@@ -29,7 +28,9 @@
         <div class="uppercase font-bold text-[#8C8C9A] text-[12px]">Tecnologias</div>
         <div class="flex gap-[8px] items-center pb-2">
             @foreach ($project->tech_stack as $tech)
-            <x-ui.tech :icon="$tech" :text="$tech" />
+
+            {{ $tech }} |
+            {{-- <x-ui.tech :icon="$tech" :text="$tech" /> --}}
             @endforeach
         </div>
     </div>
