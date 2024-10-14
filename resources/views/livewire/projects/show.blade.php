@@ -1,1 +1,1 @@
-<x-projects.card :$project />
+<x-project-card :$project />
