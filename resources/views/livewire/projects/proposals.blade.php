@@ -1,3 +1,1 @@
-<div>
-    <h2>Component Project Proposals</h2>
-</div>
+<x-proposals.index :proposals="$project->proposals" />
