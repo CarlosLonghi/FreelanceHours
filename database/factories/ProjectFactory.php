@@ -22,7 +22,7 @@ class ProjectFactory extends Factory
             'description' => fake()->randomHtml(),
             'ends_at' => fake()->dateTimeBetween('now', '+ 5 days'),
             'status' => fake()->randomElement(['open', 'closed']),
-            'tech_stack' => fake()->randomElements(['php', 'laravel', 'javascript', 'css', 'html', 'python', 'mysql', 'sql', 'vue', 'react', 'node', 'angular', 'nextjs', 'java', '.net', 'c#'], random_int(1, 5)),
+            'tech_stack' => fake()->randomElements(['vite', 'react', 'javascript', 'nodejs', 'nextjs', 'laravel', 'php', 'livewire', 'csharp', 'java', 'angular', 'python', 'vue', 'postgresql', 'mysql'], random_int(1, 5)),
             'created_by' => User::factory(),
         ];
     }
