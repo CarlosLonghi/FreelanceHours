@@ -25,6 +25,10 @@
         </div>
     </div>
 
+    <div class="description line-clamp-3 pt-4 mb-4">
+        {!! $project->description !!}
+    </div>
+
     <div class="py-4 space-y-4">
         <div class="uppercase font-bold text-[#8C8C9A] text-[12px]">Tecnologias</div>
         <div class="flex gap-[8px] items-center pb-2">

@@ -19,7 +19,7 @@ class ProjectFactory extends Factory
     {
         return [
             'title' => fake()->sentence(),
-            'description' => fake()->randomHtml(),
+            'description' => fake()->paragraph(random_int(4, 12)),
             'ends_at' => fake()->dateTimeBetween('now', '+ 5 days'),
             'status' => fake()->randomElement(['open', 'closed']),
             'tech_stack' => fake()->randomElements(['vite', 'react', 'javascript', 'nodejs', 'nextjs', 'laravel', 'php', 'livewire', 'csharp', 'java', 'angular', 'python', 'vue', 'postgresql', 'mysql'], random_int(1, 5)),
