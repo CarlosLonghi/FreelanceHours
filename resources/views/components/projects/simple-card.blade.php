@@ -8,20 +8,8 @@
             <h1 class="text-[28px] text-white leading-9">
                 {{ $project->title }}
             </h1>
-            <div class="flex items-center justify-between">
-                <div class="text-[#8C8C9A] text-[14px] leading-6">
-                    Publicado {{ $project->created_at->diffForHumans() }}
-                </div>
-                <div class="flex gap-1 items-baseline text-[14px]">
-                    <span class="text-[#8C8C9A] leading-6">Encerra em:</span>
-                    <div class="font-bold flex items-center space-x-1">
-                        <span class="text-white ">01</span><span>:</span>
-                        <span class="text-white ">12</span><span>:</span>
-                        <span class="text-white ">26</span><span>:</span>
-                        <span class="text-white ">64</span>
-                    </div>
-                </div>
-            </div>
+            
+            <livewire:projects.timer :$project />
         </div>
     </div>
 
